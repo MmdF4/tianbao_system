@@ -12,6 +12,7 @@ const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 const env = require('../config/prod.env')
+const { resolveAny } = require('dns')
 
 const webpackConfig = merge(baseWebpackConfig, {
   module: {
